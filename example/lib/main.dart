@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             whenEmptyLoad: false,
             delegate: DefaultLoadMoreDelegate(),
-            textBuilder: DefaultLoadMoreTextBuilder.chinese,
+            textBuilder: DefaultLoadMoreTextBuilder.vietnamese,
           ),
           onRefresh: _refresh,
         ),

@@ -11,7 +11,7 @@ class LoadMore extends StatefulWidget {
   static DelegateBuilder<LoadMoreDelegate> buildDelegate =
       () => DefaultLoadMoreDelegate();
   static DelegateBuilder<LoadMoreTextBuilder> buildTextBuilder =
-      () => DefaultLoadMoreTextBuilder.chinese;
+      () => DefaultLoadMoreTextBuilder.vietnamese;
 
   /// Only support [ListView],[SliverList]
   final Widget child;
@@ -369,7 +369,7 @@ abstract class LoadMoreDelegate {
   Duration loadMoreDelay() => Duration(milliseconds: _loadMoreDelay);
 
   Widget buildChild(LoadMoreStatus status,
-      {LoadMoreTextBuilder builder = DefaultLoadMoreTextBuilder.chinese});
+      {LoadMoreTextBuilder builder = DefaultLoadMoreTextBuilder.vietnamese});
 }
 
 class DefaultLoadMoreDelegate extends LoadMoreDelegate {
@@ -377,7 +377,7 @@ class DefaultLoadMoreDelegate extends LoadMoreDelegate {
 
   @override
   Widget buildChild(LoadMoreStatus status,
-      {LoadMoreTextBuilder builder = DefaultLoadMoreTextBuilder.chinese}) {
+      {LoadMoreTextBuilder builder = DefaultLoadMoreTextBuilder.vietnamese}) {
     String text = builder(status);
     if (status == LoadMoreStatus.fail) {
       return Container(
@@ -418,20 +418,20 @@ class DefaultLoadMoreDelegate extends LoadMoreDelegate {
 
 typedef String LoadMoreTextBuilder(LoadMoreStatus status);
 
-String _buildChineseText(LoadMoreStatus status) {
+String _buildVietnameseText(LoadMoreStatus status) {
   String text;
   switch (status) {
     case LoadMoreStatus.fail:
-      text = "加载失败，请点击重试";
+      text = "Tải thêm không thành công, vui lòng nhấp để thử lại!";
       break;
     case LoadMoreStatus.idle:
-      text = "等待加载更多";
+      text = "Chờ để tải thêm";
       break;
     case LoadMoreStatus.loading:
-      text = "加载中，请稍候...";
+      text = "Đang tải vui lòng đợi ...";
       break;
     case LoadMoreStatus.nomore:
-      text = "到底了，别扯了";
+      text = "Xong";
       break;
     default:
       text = "";
@@ -461,7 +461,7 @@ String _buildEnglishText(LoadMoreStatus status) {
 }
 
 class DefaultLoadMoreTextBuilder {
-  static const LoadMoreTextBuilder chinese = _buildChineseText;
+  static const LoadMoreTextBuilder vietnamese = _buildVietnameseText;
 
   static const LoadMoreTextBuilder english = _buildEnglishText;
 }

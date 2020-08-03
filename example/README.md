@@ -76,7 +76,7 @@ child: Widget ,required , support ListView ListView.builder ListView.separated, 
 onLoadMore:required A Function , `typedef Future<bool> FutureCallBack();` , reture true is success and status delay,return false or null ,then the status will change to fail.
 isFinish: bool, optional, if true, then the status will change to finish ,default is false
 delegate: LoadMoreDelegate,optional, see the LoadMoreDelegate class,default is DefaultLoadMoreDelegate
-textBuilder: optional, the result will show in loading view ,if you use default delegate. default is DefaultLoadMoreText.chinese,
+textBuilder: optional, the result will show in loading view ,if you use default delegate. default is DefaultLoadMoreText.vietnamese,
 whenEmptyLoad: bool ,optional, default is true, when [whenEmptyLoad] is true, and when listView children length is 0,or the itemCount is 0,not build loadMoreWidget.
 ```
 
