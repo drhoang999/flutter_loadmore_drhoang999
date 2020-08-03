@@ -431,7 +431,7 @@ String _buildVietnameseText(LoadMoreStatus status) {
       text = "Đang tải vui lòng đợi ...";
       break;
     case LoadMoreStatus.nomore:
-      text = "Xong";
+      text = "";
       break;
     default:
       text = "";
