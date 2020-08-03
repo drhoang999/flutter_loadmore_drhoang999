@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="758b155d-2e1c-4300-9006-9d99689afdaa" name="Default Changelist" comment="" />
+    <list default="true" id="758b155d-2e1c-4300-9006-9d99689afdaa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1fZwFTTQHiH1uLuLvwgOORsB4WH" />
   <component name="ProjectReloadState">
@@ -41,5 +47,11 @@
       <updated>1596438818786</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="933" y="239" width="583" height="566" key="find.popup" timestamp="1596439100910">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="933" y="239" width="583" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596439100910" />
   </component>
 </project>
